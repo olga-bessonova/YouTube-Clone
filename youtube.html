@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+    <style>
+      a:link {
+        text-decoration: none!important;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">7</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="channel-pictures/olga-borovikova.jpg">
+      </div>
+    </div>
+    
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+    
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=aZu084TPInE" target="_blank">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/alex-lee-thumbnail.jpg">
+              <div class="video-time">1:50</div>
+            </div>
+          </a>
+         
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/AlexLeeYT" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/alex-lee-profile.jpg">    
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/alex-lee-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Alex Lee
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      293K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=aZu084TPInE" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  when you only know 1 line of code but you gotta make google
+                </p>
+              </a>
+              
+              <p class="video-author">
+                Alex Lee
+              </p>
+        
+              <p class="video-stats">
+                1M views &#183; 2 years ago
+              </p>
+            </div>
+          
+          </div>
+  
+      
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=uC9f_osm1mo" target="_blank">
+              <img class="thumbnail" src="thumbnails/channels4-thumbnail.jpg">
+              <div class="video-time">19:01</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/Scrimba" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/channels4-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/channels4-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Scrimba
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      29.3K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+           
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=uC9f_osm1mo" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  Career Expert Reviews Junior Web Developer Portfolios
+                </p>
+              </a>
+             
+              
+              <p class="video-author">
+                Scrimba
+              </p>
+        
+              <p class="video-stats">
+                5K views &#183; 10 hours ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=Sx7xIpPwl9w" target="_blank">
+              <img class="thumbnail" src="thumbnails/3-thumbnail.jpg">
+              <div class="video-time">2:45</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/channel/UCpGiesax_1z4BPvcGQDiRPw" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/3-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/3-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Josh HiTech
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      2.09K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=Sx7xIpPwl9w" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  Becoming A Front End Developer Takes Time
+                </p>
+              </a>
+              
+  
+              <p class="video-author">
+                Josh HiTech
+              </p>
+        
+              <p class="video-stats">
+                56K views &#183; 3 weeks ago
+              </p>
+            </div>
+          
+          </div>
+  
+      
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+              <img class="thumbnail" src="thumbnails/4-thumbnail.jpg">
+              <div class="video-time">3:42</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/user/GwenStefaniVEVO" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/4-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/4-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Gwen Stefani
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      2.03M subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  Gwen Stefani - Cool (Official Music Video)
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Gwen Stefani
+  
+              </p>
+        
+              <p class="video-stats">
+                161M views &#183; 12 years ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=dHasWstp6Tk" target="_blank">
+              <img class="thumbnail" src="thumbnails/5-thumbnail.jpg">
+              <div class="video-time">3:18</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/BingeSociety" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/5-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/5-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Binge Society
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      5.76M subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=dHasWstp6Tk" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  Dear John: Why didn't you call me? (HD CLIP)
+                </p>
+              </a>
+              
+  
+              <p class="video-author">
+                Binge Society
+              </p>
+        
+              <p class="video-stats">
+                741K views &#183; 1 year ago
+              </p>
+            </div>
+          
+          </div>
+  
+      
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=WjrF_i98NOk" target="_blank">
+              <img class="thumbnail" src="thumbnails/6-thumbnail.jpg">
+              <div class="video-time">9:02</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/AzaleaHart" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/6-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/6-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Azalea Hart
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      209K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=WjrF_i98NOk" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  12 Most Accurate Ariana Grande Celebrity Impressions
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Azalea Hart
+  
+              </p>
+        
+              <p class="video-stats">
+                1M views &#183; 1 year ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=zVuuooZqVaU" target="_blank">
+              <img class="thumbnail" src="thumbnails/7-thumbnail.webp">
+              <div class="video-time">3:00</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/MOVIECLIPS" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/7-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/7-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Movieclips
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      57.5M subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=zVuuooZqVaU" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  One Day Official Trailer #1 - (2011) HD
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Movieclips
+  
+              </p>
+        
+              <p class="video-stats">
+                12M views &#183; 10 years ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=GW05iIpTJN8" target="_blank">
+              <img class="thumbnail" src="thumbnails/8-thumbnail.webp">
+              <div class="video-time">1:05:10</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/channel/UCjNpCOBtNDyk7kcs-wrX_dg" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/8-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/8-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Chris Luno
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      251K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=GW05iIpTJN8" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  good morning house mix
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Chris Luno  
+              </p>
+        
+              <p class="video-stats">
+                1M views &#183; 4 months ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=-DN5r0jTA2w" target="_blank">
+              <img class="thumbnail" src="thumbnails/9-thumbnail.webp">
+              <div class="video-time">16:39</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/CodyKo" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/9-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/9-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Cody Ko
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      5.89M subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=-DN5r0jTA2w" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  THAT'S CRINGE: Girl Defined Edition
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Cody Ko  
+              </p>
+        
+              <p class="video-stats">
+                30M views &#183; 4 years ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=GqnlZF2uc9k" target="_blank">
+              <img class="thumbnail" src="thumbnails/10-thumbnail.webp">
+              <div class="video-time">3:05:03</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/channel/UCRffZ_2_I66S_JOnMP--jnw" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/10-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/10-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Dream Vibes
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      23.1K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=GqnlZF2uc9k" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  Oldies music playing in another room and it's raining (Rain Sound 🌨, no thunders) 3 HOUR ASMR
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Dream Vibes  
+              </p>
+        
+              <p class="video-stats">
+                1.1M views &#183; 1 year ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=8pwSNE_Qk0c" target="_blank">
+              <img class="thumbnail" src="thumbnails/11-thumbnail.webp">
+              <div class="video-time">31:11</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/%D0%9D%D0%AE%D0%91%D0%95%D0%A0%D0%93" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/11-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/11-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      НЮБЕРГ
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      36.8K subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=8pwSNE_Qk0c" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  Звезда, которую мы ПОГУБИЛИ - Честер Беннингтон (Linkin Park)
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                НЮБЕРГ  
+              </p>
+        
+              <p class="video-stats">
+                92K views &#183; 10 months ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=TLysAkFM4cA" target="_blank">
+              <img class="thumbnail" src="thumbnails/12-thumbnail.webp">
+              <div class="video-time">8:36</div>
+            </a>
+          </div>
+  
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/c/JomaOppa" target="_blank">
+                  <img class="profile-picture" src="channel-pictures/12-profile.jpg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="profile-picture" src="channel-pictures/12-profile.jpg">
+                  <div class="channel-name-and-subscriptions">
+                    <div class="channel-tooltip-name">
+                      Joma Tech
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      1.82M subscribers
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+      
+            <div class="video-info"> 
+              <a href="https://www.youtube.com/watch?v=TLysAkFM4cA" target="_blank" class="video-target-link">
+                <p class="video-title">
+                  a day in the life of a startup engineer working from home  
+                </p>
+              </a>
+              
+              
+              <p class="video-author">
+                Joma Tech
+  
+              </p>
+        
+              <p class="video-stats">
+                1M views &#183; 1 year ago
+              </p>
+            </div>
+                  
+          </div>
+  
+        </div>
+  
+      </section>
+    </main>
+    
+    
+  </body>
+</html>
+
+
